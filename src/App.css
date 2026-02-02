@@ -1,0 +1,177 @@
+.jira-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #ffffff;
+}
+
+.jira-navbar {
+  height: 56px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dfe1e6;
+  background: #ffffff;
+}
+
+.jira-content {
+  flex: 1;
+  padding: 24px 40px;
+  overflow-y: auto;
+}
+
+.jira-header {
+  margin-bottom: 24px;
+}
+
+.jira-breadcrumb {
+  font-size: 14px;
+  color: #6b778c;
+  margin-bottom: 8px;
+}
+
+.jira-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.jira-filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.kanban-board {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.jira-column {
+  background: #f4f5f7;
+  border-radius: 3px;
+  width: 280px;
+  min-height: 200px;
+  max-height: calc(100vh - 250px);
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  flex-shrink: 0;
+}
+
+.column-header {
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #5e6c84;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.task-list {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 50px;
+  padding: 4px;
+}
+
+.jira-card {
+  background: #ffffff;
+  border-radius: 3px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  box-shadow: 0 1px 2px rgba(9, 30, 66, 0.25);
+  cursor: pointer;
+  border: none;
+  transition: background 0.1s;
+  position: relative;
+}
+
+.jira-card:hover {
+  background: #ebecf0;
+}
+
+.jira-card.is-dragging {
+  background: #e6effc;
+  box-shadow: 0 8px 16px -4px rgba(9, 30, 66, 0.25);
+  transform: rotate(2deg);
+}
+
+.card-content {
+  font-size: 14px;
+  color: #172b4d;
+  margin-bottom: 12px;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-id {
+  font-size: 11px;
+  color: #5e6c84;
+  font-weight: 500;
+}
+
+.card-actions {
+  display: flex;
+  gap: 4px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.jira-card:hover .card-actions {
+  opacity: 1;
+}
+
+.quick-add-container {
+  margin-top: 8px;
+  padding: 0 4px;
+}
+
+.quick-add-btn {
+  width: 100%;
+  text-align: left;
+  color: #42526e;
+  border-radius: 3px;
+  padding: 6px 8px;
+}
+
+.quick-add-btn:hover {
+  background: #ebecf0;
+  color: #172b4d;
+}
+
+.dragging-over {
+  background-color: #dfe1e6;
+}
+
+/* Jira Avatars */
+.avatar-group {
+  display: flex;
+  margin-left: 8px;
+}
+
+.jira-avatar {
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  margin-left: -8px;
+}
+
+.jira-avatar:first-child {
+  margin-left: 0;
+}
